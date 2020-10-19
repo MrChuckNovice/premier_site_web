@@ -1,0 +1,21 @@
+.articles { 
+    text-align: center;
+    padding-top: 30px;
+}
+.article_titre {
+    font-size: 30px;
+    text-align: center;
+    color: #333;
+    border-bottom: 1px solid #f39c12 ;
+    display: inline ;
+}
+
+.articles_items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+*.article {
+    
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>La Corse</title>
+        <link href="header.css" rel="stylesheet">
+        <link href="base.css" rel="stylesheet">
+        <link href="polaroid.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/e5df34c7bf.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <!--logo + image de background-->
+        <div class="header">
+            <div class="header_texture"></div>
+            <div class="header_mask">
+                <!-- gerer les bordures du header pour obtenir un rendu arrondie -->
+                <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <path d="M0 100 L 0 0 C 25 100 75 100 100 0 L 100 100" fill="#fff"></path>
+                </svg>
+
+            </div>
+                <div class="container">
+                     <div class="header_navbar">
+                <!--logo-->
+                         <div class="header_navbar_logo">
+                            <img src="exemple/logo_site.jpg" alt="logo">
+                         </div>
+                <!--menu-->
+                         <div class="header_navbar_menu">
+                             <a href="index.html" class="header_navbar_menu_link"><i class="fas fa-home"></i> Accueil</a>
+                             <a href="Actualités.html" class="header_navbar_menu_link"><i class="far fa-newspaper"></i> Actualités</a>
+                             <a href="Leslieuxincontournables.html" class="header_navbar_menu_link"><i class="fas fa-compass"></i>Les lieux incontournables</a>
+                             <a href="Marchéetfoire.html" class="header_navbar_menu_link"><i class="fas fa-store"></i>Marché et foire</a>
+                         </div>
+                     </div>    
+                    <!--slogan-->  
+                         <div class="header_slogan">
+                             <h1>souvant conquise, jamais soumise</h1>
+                         </div>        
+                </div>
+         </div>                 
+         <main>   
+            <!-- image + nom du lieu + période d'ouverture + mini description -->
+              
+                <div class="polaroid"> 
+                     <img src="exemple/marché_poghju.jpg" style="width: 100%";>
+                     <div class="container">
+                     <h1>MARCHÉ DE POGHJU È MEZANA</h1>
+                     <p>Tous les dimanches d'avril à novembre</p>
+                     <p>Le marché dominical Poghju è Mezana, c'est l'occasion de découvrir des produits corses artisanaux...</p>
+                     </div>
+                </div>    
+             
+                <div class="polaroid">
+                    <img src="exemple/marché_d'arcarota.jpeg" style="width: 100%";>
+                    <div class="container">
+                     <h1>MARCHÉ D'ARCAROTA</h1>
+                     <p>Tous les dimanches de juillet et août</p>
+                     <p>Venez découvrir ce marché authentique au col d'Arcarota, col surplombant l'Alisgiani et l'Orezza.</p>
+                     </div>
+                </div>
+            
+                <div class="polaroid">
+                     <img src="exemple/Festa_di__a_nuciola.jpg" style="width: 100%";> 
+                     <div class="container">  
+                    <h1>FESTA DI A NUCIOLA</h1>
+                    <p>Avant dernier week-end d'août</p>
+                    <p>Avec plus de 20 ans d’existence, la fête de la noisette est un événement incontournable en Corse.</p>
+                    </div>
+                </div>
+            <!-- le copyright-->
+            <footer>
+                 &copy; - La Corse  
+            </footer>
+        </main>
+    </body>
+</html>

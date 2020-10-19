@@ -1,0 +1,91 @@
+.header{
+   height: 300px;
+   width: 100%;
+   background: skyblue;
+   position: relative;
+ } 
+
+.header_texture {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;left: 0;
+    background: url("exemple/corsica_gif.gif"); center no-repeat;
+    background-size: cover;
+    z-index: 1;
+    opacity: 0.6;
+}
+
+.header_mask {
+    position: absolute;
+    bottom: 0;
+    background: 0 0;
+    height: 42px;
+    width: 100%;
+    z-index: 10;
+
+}
+
+.header_navbar{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header_navbar_logo {
+    color:none;
+    width: 100px;
+    left: auto;
+}
+
+.header_slogan{
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.header_navbar_menu_link{
+    margin-left: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header_navbar_toggle {
+    width 40px;
+    height 60px;
+    display: flex;
+    align-items: center;
+    display: none;
+}
+
+.header_navbar_toggle_icons, .header_navbar_toggle_icons:before, .header_navbar_toggle_icons:after  {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    background: #fff;
+    position: relative;
+}
+.header_navbar_toggle_icons:before {top: 10px}
+.header_navbar_toggle_icons:after {top: -14px}
+
+@media only screen and (max-width:600){
+    .header_navbar_toggle {
+        display: flex;
+        z-index: 500;
+    }
+    .header_navbar_menu {
+        display: block;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background: red;
+    }
+    
+}

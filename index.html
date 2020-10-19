@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>La Corse</title>
+        <link href="base.css" rel="stylesheet">
+        <link href="header.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/e5df34c7bf.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--logo + image de background-->
+        <div class="header">
+            <div class="header_texture"></div>
+            <div class="header_mask">
+                <!-- gerer les bordures du header pour obtenir un rendu arrondie -->
+                <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <path d="M0 100 L 0 0 C 25 100 75 100 100 0 L 100 100" fill="#fff"></path>
+                </svg>
+            </div>
+                <div class="container">
+                     <div class="header_navbar">
+                <!--logo-->
+                         <div class="header_navbar_logo">
+                            <img src="exemple/logo_site.jpg" alt="logo">
+                         </div>      
+                <!--menu-->   
+                         <div class="header_navbar_menu">
+                             <a href="index.html" class="header_navbar_menu_link"><i class="fas fa-home"></i> Accueil</a>
+                             <a href="Actualités.html" class="header_navbar_menu_link"><i class="far fa-newspaper"></i> Actualités</a>
+                             <a href="Leslieuxincontournables.html" class="header_navbar_menu_link"><i class="fas fa-compass"></i>Les lieux incontournables</a>
+                             <a href="Marchéetfoire.html" class="header_navbar_menu_link"><i class="fas fa-store"></i>Marché et foire</a>
+                         </div>
+                         <div class="header_navbar_toggle">
+                             <span class="header_navbar_toggle_icons"></span>
+                         </div>
+                     </div> 
+                 <!--slogan-->  
+                    <div class="header_slogan">
+                             <h1>souvant conquise, jamais soumise</h1>
+                         </div>
+                </div>        
+        </div>          
+         <main>   
+        <!--Fin du Header--> 
+         <div class="image_de_background" style="max-width:100%";>
+        <img class="diaporama slide" src="exemple\plage_corse.jpg" style="width:100%">
+        <img class="diaporama slide" src="exemple/Corte-Corse.jpg" style="width:100%">
+        <img class="diaporama slide" src="exemple/ajaccio.jpg" style="width:100%">
+        <img class="diaporama slide" src="exemple/falaises_de_bonifacio.jpeg" style="width:100%">
+         </div>
+         <!--script de diaporama + boucle -->
+         <script>
+             var myIndex = 0;
+             carousel();
+
+             function carousel(){
+                 var i;
+                 var x = document.getElementsByClassName("diaporama slide");
+                 for (i= 0; i < x.length; i++){
+                     x[i].style.display ="none";
+                 }
+                 myIndex++;
+                 if (myIndex > x.length) {myIndex= 1}
+                 x[myIndex-1].style.display = "block";
+                 setTimeout(carousel, 5000);
+             }
+         </script>
+       
+        <!-- Debut du main objectif integrer le texte -->
+        <div class="main">
+            <div class="titre">
+            <h1>Découvrir l'île de beauté</h1>
+            </div>
+           <div class="histoire"> La Corse (en corse et en italien : Corsica ; en ligure : Còrsega) est une île située en mer Méditerranée et une collectivité territoriale unique française.</p>
+            Quatrième île de la mer Méditerranée par sa superficie, la Corse a été rattachée durant près de quatre siècles à la République de Gênes avant une brève indépendance comme Royaume de Corse du 15 avril 1736 au mois de décembre 1740. En 1755, elle adopte la première constitution démocratique de l'histoire moderne et donne pour la première fois en partie le droit de vote aux femmes. Le 15 mai 1768, elle est cédée par la République de Gênes à la France, bien que Gênes n'ait qu'une emprise limitée sur l'île depuis la déclaration d'indépendance de la République Corse en 1755. Elle est conquise militairement par le Royaume de France lors de la bataille de Ponte-Novo, le 9 mai 1769.
+             Département unique à la création des départements en 1790, la Corse est divisée en deux en 1793 avec la création des départements du Golo et du Liamone. Elle redevient partiellement indépendante sous protectorat britannique de 1794 à 1796 avec la création du Royaume anglo-corse. En 1796 la Corse est définitivement française puis réunifiée en 1811 en un unique département, puis de nouveau divisée en 1975 avec la création des départements de Haute-Corse et de Corse-du-Sud. La région Corse est créée en 1982 (en tant que collectivité) et acquiert en 1991, à la suite des revendications locales, un statut de collectivité à statut particulier dénommée « collectivité territoriale de Corse ».   
+             Enfin, depuis le 1er janvier 2018, en application de la loi portant sur la nouvelle organisation territoriale de la République du 7 août 2015, la Corse est devenue une collectivité à statut particulier au sens de l’article 72 de la Constitution, de type collectivité territoriale unique, dénommée « collectivité de Corse », en lieu et place de la collectivité territoriale de Corse et des départements de Corse-du-Sud et de Haute-Corse (en tant que collectivités). Les circonscriptions administratives départementales de Corse-du-Sud et de Haute-Corse, territoires d'exercice des compétences de l'État, restent inchangées, avec les préfectures respectivement à Ajaccio et Bastia.
+            </div>
+             <!-- le copyright-->
+            <footer>
+            &copy; - La Corse
+            </footer>
+        </div class="main">
+    </body>        
+</html>
