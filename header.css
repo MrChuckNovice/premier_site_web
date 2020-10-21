@@ -44,12 +44,13 @@
 
 .header_slogan{
     color: #fff;
-    font-size: 20px;
+    font-size: calc(0.6em + 1vw);
     text-transform: uppercase;
     text-align: center;
 }
 
 .header_navbar_menu_link{
+    font-size: calc(0.4em + 1vw);
     margin-left: 30px;
     color: #fff;
     text-decoration: none;

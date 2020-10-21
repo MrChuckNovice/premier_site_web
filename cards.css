@@ -11,12 +11,12 @@
     box-shadow: 0 0 3px rgba(0, 0 , 0, 0.1);
 }
 .card_image{
-    width: 100%;
+    max-width: 100%;
     display: block;
 }
 .card_content{
     line-height: 1.5;
-    font-size: 0.9em;
+    font-size: calc(0.9em + 0.3vw);
     padding: 15px;
     background: #fafafa;
 }

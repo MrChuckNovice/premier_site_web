@@ -11,6 +11,7 @@
     }
 
     div.container {
+        font-size: calc(0.5em + 1vw);
         text-align: center;
         padding: 10px 20px;
     }
